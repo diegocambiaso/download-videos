@@ -5,7 +5,7 @@
 # GNU General Public License v3.0
 
 '''
-This script is for educational purposes and will let you danload a video.
+This script is for educational purposes and will let you download a video.
 '''
 
 from pytube import YouTube
