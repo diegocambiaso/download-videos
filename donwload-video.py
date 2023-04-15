@@ -16,9 +16,16 @@ def DownloadVideo(url):
         youtubeObject = youtubeObject.streams.get_highest_resolution()
         print("Downloading...")
         youtubeObject.download()
-        print("Download is completed successfully")
-    except:
+    except(OSError, RuntimeError, ValueError):
         print("An error has occurred")
+    except Exception as e:
+        print("An error has ocurred.")
+        e.add_note("Unknowed error trying donwloading the video")
+        print("Error: ", e)
+    except KeyboardInterrupt:
+        print("Stoped by the user")
+    else:
+        print("Download is completed successfully")
 
 if __name__ == "__main__":
     print("Download Video")
