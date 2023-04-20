@@ -8,6 +8,8 @@
 This script is for educational purposes and will let you download a video.
 '''
 
+__version__ = 1
+
 from pytube import YouTube
 
 def DownloadVideo(url):
