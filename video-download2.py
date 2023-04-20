@@ -10,6 +10,8 @@
 This script is for educational purposes and will let you download a video.
 '''
 
+__version__ = 2
+
 from pytube import YouTube
 import pyperclip as pc
 
