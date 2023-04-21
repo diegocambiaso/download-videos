@@ -8,7 +8,7 @@
 This script is for educational purposes and will let you download a video.
 '''
 
-__version__ = 1
+__version__ = 1.5
 
 from pytube import YouTube
 
